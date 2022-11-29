@@ -1,13 +1,117 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button {
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.App {
+  width: auto;
+  height: calc(100vh - 2px);
+  overflow: auto;
+  border: 1px solid red;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  border: 1px solid rgb(207, 206, 206);
+  width: auto;
+  height: auto;
+  padding: 3px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-form {
+  width: auto;
+  height: 70px;
+  padding: 0 10px;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+.card-form button {
+  background-color: rgb(12, 161, 129);
+  border: none;
+  height: 30px;
+  padding: 0 20px;
+  color: white;
+  border-radius: 6px;
+}
+.card-form input {
+  border: none;
+  height: 30px;
+  border-radius: 6px;
+  margin-left: 5px;
+  margin-right: 15px;
+  padding: 0 10px;
+}
+.card-form input:focus {
+  outline: none;
+  border-color: rgb(12, 161, 129);
+  box-shadow: 0 0 5px rgb(12, 161, 129);
+}
+
+.card-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-item-wrapper {
+  border: 2px solid rgb(12, 161, 129);
+  width: 250px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 6px;
+}
+.card-item-wrapper h3 {
+  margin: 0;
+}
+.card-btn-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.card-btn-wrapper button {
+  border: 1.5px solid;
+  background-color: white;
+  border-radius: 6px;
+  flex: 1;
+  height: 30px;
+}
+.card-btn-wrapper button:nth-child(1){
+  border-color: red;
+}
+.card-btn-wrapper button:nth-child(2){
+  border-color: green;
 }
